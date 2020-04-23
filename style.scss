@@ -1,3 +1,5 @@
+$mainColor: palevioletred;
+$textColor: whitesmoke !important; 
 $headerFont: 'Montserrat Alternates', sans-serif;
 $textFont: 'Montserrat', sans-serif;
 
@@ -18,24 +20,46 @@ html, body {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px; /* Has to match height of footer */
+    padding-bottom: 200px; /* Has to match height of footer */
 }
 
 body {
     background-color: mediumslateblue;
     font-family: $textFont;
-    color: whitesmoke;
+    color: $textColor;
+    header {
+        background: url("assets/cacaoHands.jpg") no-repeat;
+        background-size: cover;
+        background-color: $mainColor;
+        width: 100%;
+        height: 50vh;
+        a {
+            color: $textColor;
+        }
+        #nav-bar {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
     h1 {
         font-family: $headerFont;
         font-weight: 700;
         font-size: 50px;
-        color: whitesmoke;
+        color: $textColor;
     }
     footer {
-        background-color: palevioletred;
+        background-color: $mainColor;
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 100px;
+        height: 200px;
     }
 }
+
+// .navbar-dark .navbar-toggler {
+//     color: $textColor;
+//     border-color: $textColor;
+// }
+
+// #navbarNav {
+//     background-color: rgba(0, 0, 0, 0.9);
+// }
