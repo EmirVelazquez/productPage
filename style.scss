@@ -1,6 +1,13 @@
+$headerFont: 'Montserrat Alternates', sans-serif;
+$textFont: 'Montserrat', sans-serif;
+
 body {
     background-color: mediumslateblue;
+    font-family: $textFont;
     h1 {
+        font-family: $headerFont;
+        font-weight: 700;
+        font-size: 50px;
         color: whitesmoke;
     }
 }
