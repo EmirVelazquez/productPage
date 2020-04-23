@@ -1,12 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+#mainContainer {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px;
+  /* Has to match height of footer */
+}
+
 body {
   background-color: mediumslateblue;
   font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
 }
 body h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   font-size: 50px;
   color: whitesmoke;
+}
+body footer {
+  background-color: palevioletred;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

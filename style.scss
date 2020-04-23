@@ -1,13 +1,41 @@
 $headerFont: 'Montserrat Alternates', sans-serif;
 $textFont: 'Montserrat', sans-serif;
 
+* {
+ box-sizing: border-box;
+    &:before, &:after {
+        box-sizing: border-box;
+    }
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+#mainContainer {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* Has to match height of footer */
+}
+
 body {
     background-color: mediumslateblue;
     font-family: $textFont;
+    color: whitesmoke;
     h1 {
         font-family: $headerFont;
         font-weight: 700;
         font-size: 50px;
         color: whitesmoke;
+    }
+    footer {
+        background-color: palevioletred;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
     }
 }
