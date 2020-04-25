@@ -19,8 +19,8 @@
 <body>
     <div id="mainContainer">
         <header id="header">
-            <nav class="navbar navbar-expand-lg" id="nav-bar">
-                <a class="navbar-brand" href="#">
+            <nav class="navbar fixed-top navbar-expand-lg" id="nav-bar">
+                <a class="navbar-brand" href="index.html">
                     <img src="" width="30" height="30" class="d-inline-block align-top" alt="" id="header-img">
                     Tenochtitlán
                 </a>
@@ -30,30 +30,83 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#specialsSection">Specials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#productsSection">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Story</a>
+                            <a class="nav-link" href="#ourSection">Our Story</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h1>Tenochtitlán Chocolate</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur error blanditiis, rerum soluta ab
-            perspiciatis eligendi voluptate suscipit animi rem minima porro iste repellendus dicta quidem debitis
-            corrupti
-            facilis!</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="specialsSection">
+                        <h1>Specials</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur error blanditiis,
+                            rerum
+                            soluta ab
+                            perspiciatis eligendi voluptate suscipit animi rem minima porro iste repellendus dicta
+                            quidem
+                            debitis
+                            corrupti
+                            facilis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="productsSection">
+                        <h1>Products</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur error blanditiis,
+                            rerum
+                            soluta ab
+                            perspiciatis eligendi voluptate suscipit animi rem minima porro iste repellendus dicta
+                            quidem
+                            debitis
+                            corrupti
+                            facilis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="ourSection">
+                        <h1>Our Story</h1>
+                        <div id="videoContainer">
+                            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ibjUpk9Iagk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
-            <p>Footer Goes Here.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Get The Latest</h3>
+                        <p>Stay up to date with the latest Tenochtitlán Chocolatier news and events.</p>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <input type="email" id="email" placeholder="Email Address" name="email">
+                            <input type="submit" id="submit" value="submit">
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto quas facilis
+                            doloremque doloribus inventore, laudantium deleniti rem modi mollitia, voluptas ut dolore
+                            voluptates ratione? Saepe unde debitis asperiores molestiae.</p>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>
