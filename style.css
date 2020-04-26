@@ -16,7 +16,7 @@ html, body {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 400px;
   /* Has to match height of footer */
 }
 
@@ -38,6 +38,9 @@ body header a {
 body header #nav-bar {
   background-color: rgba(0, 0, 0, 0.9);
 }
+body header #nav-bar .nav-link:hover {
+  color: red !important;
+}
 body h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
@@ -49,7 +52,12 @@ body footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 400px;
+}
+body footer .footLink:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
