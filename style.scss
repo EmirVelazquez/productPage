@@ -40,8 +40,8 @@ body {
         #nav-bar {
             background-color: rgba(0, 0, 0, 0.9);
             #logoAnchor {
-                max-width: 297px;
-                max-height: 100px;
+                max-width: 240px;
+                max-height: 81px;
             }
             .navbar-toggler {
                 width: 50px;
@@ -49,19 +49,27 @@ body {
                 border: 1px solid $textColor;
             }
             .nav-link {
+                font-size: 18px;
                 &:hover{
                     color: $secondColor !important;
                 }
-            }
-            #navbarNav {
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%);
             }
         }
     }
     #specialsSection, #productsSection, #ourSection {
         color: $mainColor !important;
+    }
+    #specialsSection {
+        text-align: center;
+        h1{
+            border: 2px solid $secondColor;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        p {
+            font-size: 18px;
+        }
     }
     h1 {
         font-family: $headerFont;
@@ -90,6 +98,20 @@ body {
         .footEnd {
             margin: 10px 20px 10px 20px;
         }
+        #creditDropdown {
+            color: $mainColor;
+            margin: 10px 20px 10px 20px;
+            display: inline-block;
+            background-color: $secondColor;
+            border-radius: 5px;
+            border: 1px solid $textColor; 
+            &:hover {
+                background-color: $mainColor;
+                #dropdownMenuButton{
+                    color: $secondColor;
+                }
+            }
+        }
         #scriptTest {
             display: inline-block;
             width: 30px; 
@@ -110,11 +132,9 @@ body {
     }
 }
 
-.navbar-brand {
-    font-family: $headerFont;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
+.cartContainer{
+    height: 30px;
+    width: 30px;
 }
 
 .nav-item {
@@ -123,6 +143,29 @@ body {
 
 #fcc_test_suite_wrapper {
     display: none;
+}
+
+#socialIcons{
+  padding-top: 5px;
+  display: flex;
+  .socialWrapper {
+    display: block;
+    margin: 0 10px 10px 0;
+    border: 2px solid $textColor;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    .socialSvg {
+      fill: $textColor;
+    }
+  }
+  .socialWrapper:hover{
+    border: 2px solid $secondColor !important;
+    .socialSvg {
+      fill: $secondColor !important;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {

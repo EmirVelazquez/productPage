@@ -39,24 +39,34 @@ body header #nav-bar {
   background-color: rgba(0, 0, 0, 0.9);
 }
 body header #nav-bar #logoAnchor {
-  max-width: 297px;
-  max-height: 100px;
+  max-width: 240px;
+  max-height: 81px;
 }
 body header #nav-bar .navbar-toggler {
   width: 50px;
   height: 40px;
   border: 1px solid whitesmoke !important;
 }
+body header #nav-bar .nav-link {
+  font-size: 18px;
+}
 body header #nav-bar .nav-link:hover {
   color: #D4AF37 !important;
 }
-body header #nav-bar #navbarNav {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
 body #specialsSection, body #productsSection, body #ourSection {
   color: #000000 !important;
+}
+body #specialsSection {
+  text-align: center;
+}
+body #specialsSection h1 {
+  border: 2px solid #D4AF37;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+body #specialsSection p {
+  font-size: 18px;
 }
 body h1 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -84,6 +94,20 @@ body footer .footLink:hover {
 body footer .footEnd {
   margin: 10px 20px 10px 20px;
 }
+body footer #creditDropdown {
+  color: #000000;
+  margin: 10px 20px 10px 20px;
+  display: inline-block;
+  background-color: #D4AF37;
+  border-radius: 5px;
+  border: 1px solid whitesmoke !important;
+}
+body footer #creditDropdown:hover {
+  background-color: #000000;
+}
+body footer #creditDropdown:hover #dropdownMenuButton {
+  color: #D4AF37;
+}
 body footer #scriptTest {
   display: inline-block;
   width: 30px;
@@ -102,11 +126,9 @@ body footer #submit:hover {
   color: #D4AF37;
 }
 
-.navbar-brand {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
+.cartContainer {
+  height: 30px;
+  width: 30px;
 }
 
 .nav-item {
@@ -115,6 +137,29 @@ body footer #submit:hover {
 
 #fcc_test_suite_wrapper {
   display: none;
+}
+
+#socialIcons {
+  padding-top: 5px;
+  display: flex;
+}
+#socialIcons .socialWrapper {
+  display: block;
+  margin: 0 10px 10px 0;
+  border: 2px solid whitesmoke !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+#socialIcons .socialWrapper .socialSvg {
+  fill: whitesmoke !important;
+}
+#socialIcons .socialWrapper:hover {
+  border: 2px solid #D4AF37 !important;
+}
+#socialIcons .socialWrapper:hover .socialSvg {
+  fill: #D4AF37 !important;
 }
 
 @media screen and (max-width: 991px) {
