@@ -1,5 +1,6 @@
 $mainColor: palevioletred;
-$textColor: whitesmoke !important; 
+$textColor: whitesmoke !important;
+$themeColor: #D4AF37; 
 $headerFont: 'Montserrat Alternates', sans-serif;
 $textFont: 'Montserrat', sans-serif;
 
@@ -40,7 +41,7 @@ body {
             background-color: rgba(0, 0, 0, 0.9);
             .nav-link {
                 &:hover{
-                    color: red !important;
+                    color: $themeColor !important;
                 }
             }
         }
@@ -59,7 +60,7 @@ body {
         height: 400px;
         .footLink {
             &:hover{
-                color: red;
+                color: $themeColor;
                 cursor: pointer;
                 text-decoration: underline;
             }
@@ -67,11 +68,13 @@ body {
     }
 }
 
-// .navbar-dark .navbar-toggler {
-//     color: $textColor;
-//     border-color: $textColor;
-// }
+.navbar-brand {
+    font-family: $headerFont;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
 
-// #navbarNav {
-//     background-color: rgba(0, 0, 0, 0.9);
-// }
+#fcc_test_suite_wrapper {
+    display: none;
+}
