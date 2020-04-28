@@ -1,6 +1,6 @@
-$mainColor: palevioletred;
+$mainColor: #000000;
+$secondColor: #D4AF37;
 $textColor: whitesmoke !important;
-$themeColor: #D4AF37; 
 $headerFont: 'Montserrat Alternates', sans-serif;
 $textFont: 'Montserrat', sans-serif;
 
@@ -21,11 +21,11 @@ html, body {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 400px; /* Has to match height of footer */
+    padding-bottom: 500px; /* Has to match height of footer */
 }
 
 body {
-    background-color: mediumslateblue;
+    background-color: $textColor;
     font-family: $textFont;
     color: $textColor;
     header {
@@ -39,30 +39,72 @@ body {
         }
         #nav-bar {
             background-color: rgba(0, 0, 0, 0.9);
+            #logoAnchor {
+                max-width: 297px;
+                max-height: 100px;
+            }
+            .navbar-toggler {
+                width: 50px;
+                height: 40px;
+                border: 1px solid $textColor;
+            }
             .nav-link {
                 &:hover{
-                    color: $themeColor !important;
+                    color: $secondColor !important;
                 }
             }
+            #navbarNav {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+            }
         }
+    }
+    #specialsSection, #productsSection, #ourSection {
+        color: $mainColor !important;
     }
     h1 {
         font-family: $headerFont;
         font-weight: 700;
         font-size: 50px;
-        color: $textColor;
     }
     footer {
         background-color: $mainColor;
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 400px;
+        height: 500px;
+        .footerHeading {
+            font-family: $headerFont;
+            color: $secondColor;
+            margin-top: 40px;
+        }
         .footLink {
             &:hover{
-                color: $themeColor;
+                color: $secondColor;
                 cursor: pointer;
                 text-decoration: underline;
+                fill: $secondColor;
+            }
+        }
+        .footEnd {
+            margin: 10px 20px 10px 20px;
+        }
+        #scriptTest {
+            display: inline-block;
+            width: 30px; 
+            height: 30px;
+        }
+        #email, #submit {
+            border-radius: 5px;
+            border-color: $textColor;
+        }
+        #submit {
+            background-color: $secondColor;
+            color: $mainColor;
+            &:hover {
+                background-color: $mainColor;
+                color: $secondColor;
             }
         }
     }
@@ -75,6 +117,28 @@ body {
     align-items: center;
 }
 
+.nav-item {
+    margin-right: 20px;
+}
+
 #fcc_test_suite_wrapper {
     display: none;
+}
+
+@media screen and (max-width: 991px) {
+    #navbarNav {
+        position:  relative !important;
+    }
+    .nav-item {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1199) {
+    footer {
+        height: 800px;
+    }
+    #mainContainer {
+        padding-bottom: 800px; /* Has to match height of footer */
+    }
 }

@@ -20,13 +20,13 @@
     <div id="mainContainer">
         <header id="header">
             <nav class="navbar fixed-top navbar-expand-lg" id="nav-bar">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/tenochLogo.png" width="259" height="80" class="d-inline-block align-top"
+                <a class="navbar-brand" href="index.html" id="logoAnchor">
+                    <img src="assets/tenochLogo.png" width="100%" height="100%" class="d-inline-block align-top"
                         alt="Tenochtitlán Company Logo" id="header-img">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <img src="assets/menuIcon.png" width="100%" height="100%" alt="Menu Icon">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -85,8 +85,8 @@
                 </div>
                 <div class="col-sm-6">
                     <div id="videoContainer">
-                        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ibjUpk9Iagk"
-                            frameborder="0"
+                        <iframe title="The History of Chocolate" id="video" width="560" height="315"
+                            src="https://www.youtube.com/embed/ibjUpk9Iagk" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -98,38 +98,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h3>In The Know</h3>
-                        <p>Stay up to date with the latest Tenochtitlán Chocolatier news and events.</p>
+                        <h3 class="footerHeading">Follow Us</h3>
+                        <p>Social Icons Here</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="footerHeading">Contact Us</h3>
+                        <p class="footLink">(800) 246-2686</p>
+                        <p class="footLink">contactus@tenochtitlán.com</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="footerHeading">Newsletter</h3>
+                        <label for="email">Stay up to date with the latest Tenochtitlán Chocolatier news and
+                            events.</label>
                         <form id="form" action="https://www.freecodecamp.com/email-submit">
                             <input type="email" id="email" placeholder="Email Address" name="email">
                             <input type="submit" id="submit" value="Sign Up">
                         </form>
                     </div>
-                    <div class="col-sm-4">
-                        <h4>Contact Us</h4>
-                        <p class="footLink">(800) 246-2686</p>
-                        <p class="footLink">contactus@tenochtitlán.com</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Follow Us</h4>
-                        <p>Social Icons Here</p>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <h3>Shop With Us</h3>
+                        <h3 class="footerHeading">Shop With Us</h3>
                         <p class="footLink">Shop</p>
                         <p class="footLink">Account</p>
                         <p class="footLink">Business</p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Careers</h4>
+                        <h3 class="footerHeading">Careers</h3>
                         <p class="footLink">Our Mission</p>
                         <p class="footLink">Our Culture</p>
                         <p class="footLink">Careers & Jobs</p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Legal</h4>
+                        <h3 class="footerHeading">Legal</h3>
                         <p class="footLink">Terms and Conditions</p>
                         <p class="footLink">Data Protection</p>
                         <p class="footLink">Delivery Information</p>
@@ -139,15 +140,16 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <span>&copy; 2020 Emir Velazquez</span>
-                        <span class="footLink">Sitemap</span>
-                        <span class="footLink">Promo Terms & Conditions</span>
-                        <span class="footLink">Accessibility Statement</span>
-                        <span class="footLink" id="scriptTest">freeCodeCamp Test</span>
+                        <span class="footLink footEnd">Sitemap</span>
+                        <span class="footLink footEnd">Promo Terms & Conditions</span>
+                        <span class="footLink footEnd">Accessibility Statement</span>
+                        <div class="footLink footEnd" id="scriptTest"><img src="assets/fccLogo.png"
+                                alt="freeCodeCamp Logo" width="auto" height="100%">
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
-
     </div>
     <!--Bootstrap Scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

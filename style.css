@@ -16,19 +16,19 @@ html, body {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 400px;
+  padding-bottom: 500px;
   /* Has to match height of footer */
 }
 
 body {
-  background-color: mediumslateblue;
+  background-color: whitesmoke !important;
   font-family: "Montserrat", sans-serif;
   color: whitesmoke !important;
 }
 body header {
   background: url("assets/cacaoHands.jpg") no-repeat;
   background-size: cover;
-  background-color: palevioletred;
+  background-color: #000000;
   width: 100%;
   height: 50vh;
 }
@@ -38,26 +38,68 @@ body header a {
 body header #nav-bar {
   background-color: rgba(0, 0, 0, 0.9);
 }
+body header #nav-bar #logoAnchor {
+  max-width: 297px;
+  max-height: 100px;
+}
+body header #nav-bar .navbar-toggler {
+  width: 50px;
+  height: 40px;
+  border: 1px solid whitesmoke !important;
+}
 body header #nav-bar .nav-link:hover {
   color: #D4AF37 !important;
+}
+body header #nav-bar #navbarNav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+body #specialsSection, body #productsSection, body #ourSection {
+  color: #000000 !important;
 }
 body h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  color: whitesmoke !important;
 }
 body footer {
-  background-color: palevioletred;
+  background-color: #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
+}
+body footer .footerHeading {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #D4AF37;
+  margin-top: 40px;
 }
 body footer .footLink:hover {
   color: #D4AF37;
   cursor: pointer;
   text-decoration: underline;
+  fill: #D4AF37;
+}
+body footer .footEnd {
+  margin: 10px 20px 10px 20px;
+}
+body footer #scriptTest {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+body footer #email, body footer #submit {
+  border-radius: 5px;
+  border-color: whitesmoke !important;
+}
+body footer #submit {
+  background-color: #D4AF37;
+  color: #000000;
+}
+body footer #submit:hover {
+  background-color: #000000;
+  color: #D4AF37;
 }
 
 .navbar-brand {
@@ -67,8 +109,32 @@ body footer .footLink:hover {
   align-items: center;
 }
 
+.nav-item {
+  margin-right: 20px;
+}
+
 #fcc_test_suite_wrapper {
   display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #navbarNav {
+    position: relative !important;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1199) {
+  footer {
+    height: 800px;
+  }
+
+  #mainContainer {
+    padding-bottom: 800px;
+    /* Has to match height of footer */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
