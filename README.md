@@ -8,3 +8,11 @@ Part of freeCodeCamp.org responsive web design curriulum requirement. Objective 
 * CSS
 * Sass
 * Bootstrap
+
+## Link
+https://emirvelazquez.github.io/productPage/
+
+## Preview
+![](assets/productPreview.gif)
+
+
