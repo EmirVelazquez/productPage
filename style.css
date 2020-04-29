@@ -35,7 +35,7 @@ body header a {
   color: whitesmoke !important;
 }
 body header #nav-bar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 body header #nav-bar #logoAnchor {
   max-width: 240px;
@@ -51,6 +51,9 @@ body header #nav-bar .nav-link {
 }
 body header #nav-bar .nav-link:hover {
   color: #D4AF37 !important;
+}
+body header .colorNavDark {
+  background-color: black !important;
 }
 body #specialsSection, body #productsSection, body #ourSection {
   color: #000000 !important;
@@ -214,6 +217,42 @@ body footer #submit:hover {
 
   .nav-item {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #mainContainer {
+    padding-bottom: 680px !important;
+  }
+
+  #socialIcons {
+    padding-top: 1px;
+  }
+  #socialIcons .socialWrapper {
+    display: block;
+    margin: 0 10px 10px 0;
+    border: 2px solid whitesmoke !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  #socialIcons .socialWrapper .socialSvg {
+    fill: whitesmoke !important;
+  }
+
+  footer {
+    height: 680px !important;
+    font-size: 12px;
+  }
+  footer .footerHeading {
+    font-size: 18px;
+    margin-top: 5px !important;
+  }
+  footer .footLink {
+    margin-bottom: 2px !important;
+  }
+  footer .footEnd {
+    margin: 10px 5px 10px 5px !important;
   }
 }
 

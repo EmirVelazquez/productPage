@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ==================================================
     const fccButton = document.getElementById('fcc_test_suite_wrapper');
     const fccButtonToggle = document.getElementById("scriptTest");
+    const navBar = document.getElementById("nav-bar");
     // Flag for toggle
     var showing = false;
 
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Main Executions
     // ==================================================
     toggleTest();
+    colorNav();
 
     // ==================================================
     // Helper Functions
@@ -26,5 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 showing = true;
             }
         });
-    }
+    };
+
+    // This function will add a class name to the navbar for display purposes
+    function colorNav() {
+        document.addEventListener("scroll", function () {
+            let distanceScrolled = window.pageYOffset;
+            if (distanceScrolled < 1) {
+                navBar.classList.remove("colorNavDark");
+            } else {
+                navBar.classList.add("colorNavDark");
+            }
+        });
+    };
 });

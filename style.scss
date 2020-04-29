@@ -37,7 +37,7 @@ body {
             color: $textColor;
         }
         #nav-bar {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.6);
             #logoAnchor {
                 max-width: 240px;
                 max-height: 81px;
@@ -53,6 +53,9 @@ body {
                     color: $secondColor !important;
                 }
             }
+        }
+        .colorNavDark {
+            background-color: rgba(0, 0, 0, 1) !important;
         }
     }
     #specialsSection, #productsSection, #ourSection {
@@ -225,5 +228,40 @@ body {
     }
     .nav-item {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #mainContainer {
+        padding-bottom: 680px !important;
+    }
+    #socialIcons{
+        padding-top: 1px;
+        .socialWrapper {
+            display: block;
+            margin: 0 10px 10px 0;
+            border: 2px solid $textColor;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            .socialSvg {
+                fill: $textColor;
+            }
+        }
+    }
+    footer {
+        height: 680px !important;
+        font-size: 12px;
+        .footerHeading {
+            font-size: 18px;
+            margin-top: 5px !important;
+        }
+        .footLink {
+            margin-bottom: 2px !important;
+        }
+        .footEnd {
+            margin: 10px 5px 10px 5px !important;
+        }
     }
 }
